@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>344698840154-2vu3kpokihs1coj8b6fcilrp9df7mjgs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.344698840154-2vu3kpokihs1coj8b6fcilrp9df7mjgs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCfUnVOx48HyI0rACBW3j6fggccMGQ8BjQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>344698840154</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yujeong.wandering</string>
+	<key>PROJECT_ID</key>
+	<string>wandering-bfe8f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wandering-bfe8f.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:344698840154:ios:84de9b52a15b8d860c2463</string>
+</dict>
+</plist>
