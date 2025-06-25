@@ -42,17 +42,18 @@ class LoginViewModel: ObservableObject {
 
 
 
-// Logout
-func signOut() {
-       do {
-           try Auth.auth().signOut()
-           isAuthenticated = false
-       } catch {
-           showErrorMessage(error.localizedDescription)
-       }
-   }
+    // Logout
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            isAuthenticated = false
+        } catch {
+            showErrorMessage(error.localizedDescription)
+        }
+    }
 
-private func showErrorMessage(_ message: String) {
-    errorMessage = message
-    showError = true
+    private func showErrorMessage(_ message: String) {
+        errorMessage = message
+        showError = true
+    }
 }
