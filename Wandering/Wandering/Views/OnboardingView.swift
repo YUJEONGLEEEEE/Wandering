@@ -21,7 +21,7 @@ struct OnboardingView: View {
 
             Text("Find interesting places\nnear you")
                 .font(.subheadline)
-                .foregroundColor(.gray)
+                .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
 
             Spacer()
@@ -31,10 +31,10 @@ struct OnboardingView: View {
             }) {
                 Text("Get Started")
                     .font(.headline)
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.black)
+                    .background(.black)
                     .cornerRadius(12)
                     .padding(.horizontal, 40)
             }
