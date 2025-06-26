@@ -11,43 +11,58 @@ struct OnboardingView: View {
     @State private var showLogin = false
 
     var body: some View {
-        VStack(spacing: 40) {
-            Spacer()
+        ZStack {
+            Color.white.ignoresSafeArea()
 
-            Text("Welcome to\nWandering")
-                .font(.largeTitle)
-                .fontWeight(.bold)
+            VStack(spacing: 16) {
+                Spacer()
+
+                VStack(spacing: 0) {
+                    Text("Welcome to")
+                        .font(.system(size: 32, weight: .regular))
+                        .foregroundStyle(.black)
+
+                    Text("Wandering")
+                        .font(.system(size: 40, weight: .bold))
+                        .foregroundStyle(.black)
+                }
                 .multilineTextAlignment(.center)
+                .padding(.bottom, 16)
 
-            Text("Find interesting places\nnear you")
-                .font(.subheadline)
-                .foregroundStyle(.gray)
-                .multilineTextAlignment(.center)
+                Text("Find interesting places near you")
+                    .font(.subheadline)
+                    .foregroundStyle(.black)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 32)
 
-            Spacer()
+                Spacer()
 
-            Button(action: {
-                showLogin = true
-            }) {
-                Text("Get Started")
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(.black)
-                    .cornerRadius(12)
-                    .padding(.horizontal, 40)
+                Button(action: {
+                    showLogin = true
+                }) {
+                    Text("Get Started")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(.black)
+                        .cornerRadius(12)
+                        .padding(.horizontal, 40)
+                }
+                Spacer()
+
             }
-            Spacer()
+            .padding()
+            .sheet(isPresented: $showLogin) {
+                LoginView()
+
         }
-        .padding()
-        .sheet(isPresented: $showLogin) {
-            LoginView()
+
         }
     }
-//    #Preview {
-//        NavigationStack{
-//            OnboardingView()
-//        }
-//    }
+}
+#Preview {
+    NavigationStack{
+        OnboardingView()
+    }
 }

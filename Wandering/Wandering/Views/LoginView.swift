@@ -28,7 +28,7 @@ struct LoginView: View {
 
                 // Title
                 Text("LOGIN")
-                    .font(.system(size: 28, weight: .bold))
+                    .font(.system(size: 40, weight: .bold))
                     .foregroundStyle(.black)
                     .padding(.bottom, 8)
 
@@ -138,7 +138,7 @@ struct LoginView: View {
                 )
                 .background(.white)
             }
-                
+
         Spacer()
     }
         .padding(.horizontal, 28)
